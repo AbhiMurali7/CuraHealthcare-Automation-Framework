@@ -1,0 +1,26 @@
+{
+  "name": "curahealthcare-automation-framework",
+  "version": "1.0.0",
+  "description": "Playwright POM framework with fixtures, allure reporting, and CI/CD integration",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:allure": "npx playwright test --reporter=line,allure-playwright",
+    "allure:generate": "npx allure generate ./allure-results --clean",
+    "allure:open": "npx allure open ./allure-report",
+    "test:chromium": "npx playwright test --project=Chromium",
+    "test:firefox": "npx playwright test --project=Firefox",
+    "test:webkit": "npx playwright test --project=WebKit",
+    "test:mobile": "npx playwright test --project='Mobile Chrome' && npx playwright test --project='Mobile Safari'",
+    "ci": "npx playwright install --with-deps && npm run test:allure && npm run allure:generate"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.7.1",
+    "playwright": "^1.59.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

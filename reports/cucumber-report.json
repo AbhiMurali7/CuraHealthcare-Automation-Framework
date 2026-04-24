@@ -1,0 +1,204 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-module;valid-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Valid Login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the login page",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 401458,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'getByPlaceholder')\n    at new LoginPage (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/pages/LoginPage.ts:11:31)\n    at World.<anonymous> (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/tests/step-definitions/loginSteps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click login",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should be navigated to the Appointment page",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-module;login-with-enter-key",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login with Enter Key",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the login page",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 76584,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'getByPlaceholder')\n    at new LoginPage (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/pages/LoginPage.ts:11:31)\n    at World.<anonymous> (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/tests/step-definitions/loginSteps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I press Enter",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should be navigated to the Appointment page",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-module;invalid-password",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Invalid Password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am on the login page",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 67291,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'getByPlaceholder')\n    at new LoginPage (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/pages/LoginPage.ts:11:31)\n    at World.<anonymous> (/Users/abinayamurali/VSStudio/CuraHealthcare-Automation-Framework/tests/step-definitions/loginSteps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I enter valid username and wrong password",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see an error message",
+            "match": {
+              "location": "tests/step-definitions/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-module",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Module",
+    "tags": [],
+    "uri": "tests/features/login.feature"
+  }
+]

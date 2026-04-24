@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+     "ignoreDeprecations": "6.0",
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node", "playwright"],
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "tests", "pages","utils"]
+}
